@@ -1,0 +1,94 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "rodape";
+}
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #0000ff71;
+    color: #f0f8ff;
+    display: flex;          /*Aqui é o início de configuração do Flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;   /*E aqui termina*/    
+    z-index: 1; /*Deixa o box-shadow um pouco acima dos outros elementos*/
+    box-shadow: 4px 4px 6px 2px #00000063;
+}
+.cabecalho > h1{
+    margin: 0px;
+    font-weight: 300;
+    font-size: 2.8em; 
+}
+.cabecalho > h2{
+    margin: 0px;
+    font-weight: 200;
+    font-size: 1.6em;
+}
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    background-color: #00800062;
+    padding: 20px;
+}
+.conteudo{
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px 10px rgba(224,220,224,0.69);
+}
+.modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.modulo {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.modulo > h3 {
+    margin: 0px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #1867c0;
+}
+.modulo.azul { border: 2px solid #4343b3;}
+.modulo.azul > h3 { background-color: #4343b3;}
+
+.modulo.laranja { border: 2px solid #ff9800;}
+.modulo.laranja > h3 { background-color: #ff9800;}
+
+/**/
+
+.exercicio{
+    grid-template-rows: 120px 60px 1fr 60px;
+    grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "rodape";    
+}
+.principal{
+        height: calc(100vh -240px);
+}
+
+.conteudo > .titulo{
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 20px;
+}
