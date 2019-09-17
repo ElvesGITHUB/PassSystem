@@ -1,2 +1,2 @@
 # PassSystem
-A application about to make specific password for each seller
+An application about to make specific password for each seller
