@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
     <title>PassSystem</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <div class="conteudo">
             <nav class="modulos">
                 <div class="modulo azul">
-                    <h3>Atendimento Digital</h3>
+                    <h3>Atendimento Geral</h3>
                     <ul>
                         <li>
                             <a href="comum.php?dir=geral&file=senha">
@@ -25,7 +25,8 @@
                         </li>                                                                       
                     </ul>
                 </div>     
-                <div class="modulo laranja">                    
+                <div class="modulo laranja"> 
+                <h3>Atendimento Preferencial</h3>                   
                     <ul>
                         <li>
                             <a href="comum.php?dir=prefer&file=senhaprefer">
@@ -37,5 +38,8 @@
             </nav>        
         </div>    
     </main>
+    <footer class="rodape">
+        EBS  &copy <?= date('Y');?>
+    </footer>
 </body>
 </html>
