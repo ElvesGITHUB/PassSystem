@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/estilo.css">    
+    <link rel="stylesheet" href="assets/css/estilo.css">    
     <title>Tela inicial</title>
 </head>
 <body class="exercicio">
     <header class="cabecalho">
-        <h1>Sua senha</h1>
+        <h1>PREMOLTEX</h1>
         <h2>Muito obrigado pela sua visita</h2>
-    </header>    
+    </header>  
     <main class="principal">
         <div class="conteudo">
           
@@ -21,8 +21,6 @@
                 
         </div>
     </main>
-    <footer class="rodape">
-        EBS  &copy <?= date('Y');?>
-    </footer>   
+    
 </body>
 </html>
