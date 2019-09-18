@@ -20,17 +20,17 @@
                     <ul>
                         <li>
                             <a href="comum.php?dir=geral&file=senha">
-                            Gerar senha comum
+                            Gerar senha
                             </a>
                         </li>                                                                       
                     </ul>
                 </div>     
                 <div class="modulo laranja"> 
-                <h3>Atendimento Preferencial</h3>                   
+                <h3>Atendimento por Vendedor</h3>                   
                     <ul>
                         <li>
                             <a href="comum.php?dir=prefer&file=senhaprefer">
-                            Gerar senha preferencial
+                            Gerar senha
                             </a>
                         </li>                                                                       
                     </ul>
