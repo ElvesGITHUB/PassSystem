@@ -13,7 +13,14 @@ if(true){
 }
 echo "Retire sua senha";
 */
+ 
 
+//Ou esse:
+
+$comum = 1;
+$statusLoja;
+$statusLoja = $comum <= 0 ? 'Senha Comum' : 'Senha por vendedor';
+echo "$statusLoja<br>";
 
 /*
 
@@ -60,3 +67,38 @@ switch($v = 4){
 }
 
 echo "Retire sua senha";
+
+
+
+
+//OU ESSE AQUI, QUE ACHO MAIS PRÁTICO E SIMPLES:
+
+echo'<br>';
+
+$vendedor = 'Renato';   //Aqui entra a informação do botão que seleciona o vendedor no FrontEnd
+$senha = 0;             //Aqui entra a informação de senha relacionada com o vendedor
+$nome_vendedor = '';
+switch(strtolower($vendedor)){    
+    case 'luiz':
+        $senha = '0';
+        $nome_vendedor = "Luiz";
+        break;
+    case 'ana':
+        $senha = '1';
+        $nome_vendedor = "Ana";
+        break;
+    case 'renato':
+        $senha = '2';
+        $nome_vendedor = "Renato";
+        break;
+    case 'jose':
+        $senha = '3';
+        $nome_vendedor = "José";
+        break;    
+    default:
+        $senha = '4';
+        $nome_vendedor = "Maria";
+        break;
+}
+
+echo "<p>Vendedor: $nome_vendedor<br>Senha: $senha</p>";
