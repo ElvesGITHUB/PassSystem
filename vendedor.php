@@ -102,3 +102,28 @@ switch(strtolower($vendedor)){
 }
 
 echo "<p>Vendedor: $nome_vendedor<br>Senha: $senha</p>";
+
+
+
+//OUTRA OPÇÃO PARA CRIAR A SENHA
+
+//MEU RANGE DE NOME DO VENDEDOR E SENHA PARA O PASSSYSTEM
+echo "<div center><h2>Vendedor(a)</h2></div>";
+$vend = ["Elza", "José", "Benedito", "Cindy", "Laura", "Maria", "Tiriba"];
+
+$keyname = array_rand($vend);
+echo "<div center><h1>$vend[$keyname]</h1></div>";
+
+echo "<div center><h2>Senha</h2></div>";
+$senha = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+$npass = array_rand($senha);
+echo "<div center><h1>$senha[$npass]</h1></div>"
+?>
+
+<style>
+    [center]{       /* pode usar as chaves '[]' ao invés do ponto ( . )*/
+        display: flex;
+        justify-content: center;
+    }
+</style>
