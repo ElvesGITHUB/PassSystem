@@ -34,6 +34,16 @@
                             </a>
                         </li>                                                                       
                     </ul>
+                </div>
+                <div class="modulo azul"> 
+                <h3>Post</h3>                   
+                    <ul>
+                        <li>
+                            <a href="comum.php?dir=media_tempo&file=post">
+                            Gerando média do tempo
+                            </a>
+                        </li>                                                                       
+                    </ul>
                 </div>     
             </nav>        
         </div>    
