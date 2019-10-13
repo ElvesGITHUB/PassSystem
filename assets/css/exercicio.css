@@ -7,7 +7,7 @@ body.exercicio{
         "rodape";    
 }
 .principal{
-        height: calc(100vh -240px);
+    height: calc(100vh -240px);
 }
 .navegacao{
     grid-area: navegacao;

@@ -14,6 +14,6 @@
    
     $senha = [1,2,3,4,5,6];   //Aumentando um índice da array aqui ele aparece a mensagem na tela de tempo de espera. Ele pega essa variável ($senha) lá no momento em que é gerada (só indicar esse local corretamente).
     $media_Formatada = number_format($media, 0,'' ,'');
-    if($senha > $tempo){
+    if($senha > $tempo){    //Quando for o 6º cliente.
         echo "Tempo médio de espera: $media_Formatada minutos<br>";
     }

@@ -19,20 +19,20 @@
                     <h3>Atendimento Geral</h3>
                     <ul>
                         <li>
-                            <a href="comum.php?dir=geral&file=senha">
-                            Gerar senha
+                            <a href="comum.php?dir=geral&file=senha" onclick="inicia();">
+                            Gerar senha                            
                             </a>
-                        </li>                                                                       
+                        </li>                           
                     </ul>
                 </div>     
                 <div class="modulo laranja"> 
-                <h3>Atendimento por Vendedor</h3>                   
+                <h3>Atendimento por Vendedor</h3>                  
                     <ul>
                         <li>
-                            <a href="comum.php?dir=prefer&file=senhaprefer">
+                            <a href="comum.php?dir=prefer&file=senhaprefer" onclick="inicia();">
                             Gerar senha
                             </a>
-                        </li>                                                                       
+                        </li>                                      
                     </ul>
                 </div>
                 <div class="modulo azul"> 
@@ -42,7 +42,17 @@
                             <a href="comum.php?dir=media_tempo&file=post">
                             Gerando média do tempo
                             </a>
-                        </li>                                                                       
+                        </li>                           
+                        <li>
+                            <a href="comum.php?dir=media_tempo&file=cronometro">
+                            Cronometro
+                            </a>
+                        </li>                           
+                        <li>
+                            <a href="comum.php?dir=escolha_vendedor&file=vendedor">
+                            Escolha o vendedor
+                            </a>
+                        </li>                           
                     </ul>
                 </div>     
             </nav>        
@@ -51,5 +61,6 @@
     <footer class="rodape">
         EBS  &copy <?= date('Y');?>
     </footer>
+    <script src="js/contador.js"></script>
 </body>
 </html>
